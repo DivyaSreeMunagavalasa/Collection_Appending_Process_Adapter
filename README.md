@@ -12,10 +12,6 @@ This repository contains a Python script (`append_process_demo.py`) that demonst
 - **Monitoring:** Monitors job status until completion.
 - **Cleanup:** Provides optional functionality to delete uploaded files after successful processing.
   
-## Usage:
-
-Users can clone the repository, configure the script with their AWS credentials and authentication server details, and follow the instructions in the README to execute the append process demo.
-
 ## Setup
 
 ### Prerequisites
@@ -26,6 +22,9 @@ Users can clone the repository, configure the script with their AWS credentials 
   pip install boto3 requests
 
 ### Configuration
+
+Users can clone the repository, configure the script with their AWS credentials and authentication server details, and follow the instructions in the README to execute the append process demo.
+
 - Clone the repository
   ```bash
   git clone https://github.com/your-repo/append-process-demo.git
@@ -47,5 +46,6 @@ Users can clone the repository, configure the script with their AWS credentials 
   PROCESS_ENDPOINT = "https://ogc.iudx.io/processes/b118b4d4-0bc1-4d0b-b137-fdf5b0558c1d/execution"
   RESOURCE_ID = "your-resource-id"
 
+## Usage:
 
   
