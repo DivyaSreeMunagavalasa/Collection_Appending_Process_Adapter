@@ -24,3 +24,9 @@ Users can clone the repository, configure the script with their AWS credentials 
 - Install required packages:
   ```bash
   pip install boto3 requests
+
+### Configuration
+- Clone the repository
+  ```bash
+  git clone https://github.com/your-repo/append-process-demo.git
+  cd append-process-demo
