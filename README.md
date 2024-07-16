@@ -29,4 +29,22 @@ Users can clone the repository, configure the script with their AWS credentials 
 - Clone the repository
   ```bash
   git clone https://github.com/your-repo/append-process-demo.git
-  cd append-process-demo
+  
+- Update ini.py:
+  Configure the script with your AWS credentials, S3 bucket details, and authentication server details by updating the ini.py file:
+  ```bash
+  S3_BUCKET_URL = "your-aws-s3-bucket-url"
+  AWS_REGION = "your-aws-region"
+  AWS_ACCESS_KEY = "your-aws-access-key"
+  AWS_SECRET_KEY = "your-aws-secret-key"
+  AWS_ENDPOINT = "your-aws-endpoint"
+
+  AUTH_SERVER_URL = "https://authvertx.iudx.io/auth/v1/token"
+  CLIENT_ID = "your-client-id"
+  CLIENT_SECRET = "your-client-secret"
+
+  PROCESS_ENDPOINT = "https://ogc.iudx.io/processes/b118b4d4-0bc1-4d0b-b137-fdf5b0558c1d/execution"
+  RESOURCE_ID = "your-resource-id"
+
+
+  
