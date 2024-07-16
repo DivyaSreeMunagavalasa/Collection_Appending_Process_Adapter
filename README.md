@@ -15,16 +15,16 @@ This repository contains a Python script (`append_process_demo.py`) that demonst
 ## Setup
 
 ### Prerequisites
-## Requirements
 
 - Python 3.x
 - boto3
 - requests
+- 
+### Installation
 
-## Installation
-
-```sh
-pip install -r requirements.txt
+- Install required packages:
+  ```bash
+  pip install -r requirements.txt
 
 ### Configuration
 
