@@ -47,5 +47,9 @@ Users can clone the repository, configure the script with their AWS credentials 
   RESOURCE_ID = "your-resource-id"
 
 ## Usage:
+- Prepare the GeoJSON File: Ensure you have the GeoJSON file you want to upload and append. Update the file path in append_process_demo.py:
+  ```bash
+  file_path = "/path/to/your/geojson-file"
+
 
   
