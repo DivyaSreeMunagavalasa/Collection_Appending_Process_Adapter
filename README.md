@@ -32,7 +32,7 @@ Users can clone the repository, configure the script with their AWS credentials 
 
 - Clone the repository
   ```bash
-  git clone https://github.com/your-repo/append-process-demo.git
+  git clone https://github.com/your-repo/append-process-demo-adapter.git
   cd append-process-demo
   
 - Update ini.py:
