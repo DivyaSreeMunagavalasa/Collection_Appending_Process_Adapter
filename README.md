@@ -2,7 +2,7 @@
 
 ## Description:
 
-This repository contains a Python script (append_process_demo.py) that demonstrates an automated append process for GeoJSON files using AWS S3 and an authentication server. The script handles uploading a GeoJSON file to S3, obtaining an access token from the authentication server, initiating an append process, and monitoring the job status until completion.
+This repository contains a Python script (`append_process_demo.py`) that demonstrates an automated append process for GeoJSON files using AWS S3 and an authentication server. The script handles uploading a GeoJSON file to S3, obtaining an access token from the authentication server, initiating an append process, and monitoring the job status until completion. Optionally, the script can delete the uploaded file from S3 after successful processing.
 
 ## Key Features:
 
