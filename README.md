@@ -19,7 +19,7 @@ This repository contains a Python script (`append_process_demo.py`) that demonst
 - Python 3.x
 - boto3
 - requests
-- 
+  
 ### Installation
 
 - Install required packages:
