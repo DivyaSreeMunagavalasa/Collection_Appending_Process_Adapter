@@ -29,6 +29,7 @@ Users can clone the repository, configure the script with their AWS credentials 
 - Clone the repository
   ```bash
   git clone https://github.com/your-repo/append-process-demo.git
+  cd append-process-demo
   
 - Update ini.py:
   Configure the script with your AWS credentials, S3 bucket details, and authentication server details by updating the ini.py file:
