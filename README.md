@@ -49,12 +49,19 @@ Users can clone the repository, configure the script with their AWS credentials 
 ## Usage:
 - Prepare the GeoJSON File: Ensure you have the GeoJSON file you want to upload and append. Update the file path in append_process_demo.py:
    ```bash
-  file_path = "/path/to/your/geojson file"
+  file_path = "/path/to/your/geojson-file"
 
 - Run the Script: Execute the script like this:
    ```bash
    python append_process_demo.py
-
+   
+- Monitor the Output:
+  The script will output the progress, including:
+    Uploading the file to S3
+    Retrieving the access token
+    Starting the append process
+    Polling the job status
+    Deleting the file from S3 (if successful)
    
 
 
