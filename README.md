@@ -37,7 +37,7 @@ Users can clone the repository, configure the script with their AWS credentials 
   
 - Update ini.py:
   Configure the script with your AWS credentials, S3 bucket details, and authentication server details by updating the ini.py file:
-  ```bash
+  ```python
   S3_BUCKET_URL = "your-aws-s3-bucket-url"
   AWS_REGION = "your-aws-region"
   AWS_ACCESS_KEY = "your-aws-access-key"
