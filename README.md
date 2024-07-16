@@ -57,11 +57,11 @@ Users can clone the repository, configure the script with their AWS credentials 
    
 - Monitor the Output:
   The script will output the progress, including:
-    Uploading the file to S3
-    Retrieving the access token
-    Starting the append process
-    Polling the job status
-    Deleting the file from S3 (if successful)
+    - Uploading the file to S3
+    - Retrieving the access token
+    - Starting the append process
+    - Polling the job status
+    - Deleting the file from S3 (if successful)
    
 
 
