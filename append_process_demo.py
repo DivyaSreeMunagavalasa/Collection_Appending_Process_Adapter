@@ -2,11 +2,7 @@ import requests
 import boto3
 import time
 import os
-from ini import (
-    S3_BUCKET_URL, AWS_REGION, AWS_ACCESS_KEY, AWS_SECRET_KEY, AWS_ENDPOINT,
-    AUTH_SERVER_URL, CLIENT_ID, CLIENT_SECRET,
-    PROCESS_ENDPOINT, RESOURCE_ID
-)
+from ini import *
 
 def upload_file_to_s3(file_path, bucket_name, object_name=None):
     s3_client = boto3.client('s3', region_name=AWS_REGION, 
