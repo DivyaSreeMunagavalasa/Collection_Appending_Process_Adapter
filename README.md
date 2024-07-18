@@ -58,7 +58,7 @@ Users can clone the repository, configure the script with their AWS credentials 
 
 - Run the Script: Execute the script like this:
    ```bash
-   python append_process_demo.py
+   python3 append_process_demo.py
    
 - Monitor the Output:
   The script will output the progress, including:
