@@ -37,7 +37,9 @@ def get_access_token():
     response = requests.post(AUTH_SERVER_URL, headers=headers, json=payload)
     if response.status_code == 200:
         print("Access token obtained successfully.")
-        return response.json()['results']['accessToken']
+        token = response.json()['results']['accessToken']
+        # print(f"Token: {token}")
+        return token
     else:
         print(f"Failed to get access token: {response.text}")
         return None
@@ -50,8 +52,8 @@ def start_append_process(token, file_name):
     payload = {
         "inputs": {
             "fileName": file_name,
-            "title": "no_features",
-            "description": "No_features for testing",
+            "title": "append_process_adapter_test",
+            "description": "Testing collection appending process demo adapter",
             "resourceId": RESOURCE_ID,
             "version": "1.0.0"
         },
@@ -59,7 +61,7 @@ def start_append_process(token, file_name):
     }
     print(f"Starting append process for file {file_name}...")
     response = requests.post(PROCESS_ENDPOINT, headers=headers, json=payload)
-    if response.status_code == 200:
+    if response.status_code == 201:
         job_api_url = response.headers.get('Location')
         print(f"Append process started successfully. Job URL: {job_api_url}")
         return job_api_url
@@ -102,7 +104,7 @@ def delete_file_from_s3(bucket_name, object_name):
 
 def main():
     file_path = "/home/divya/Downloads/data/point_10.json"  # Local path to your JSON file
-    file_name = "append.json"  # Desired S3 object name
+    file_name = "append_adapter_demo_file.json"  # Desired S3 object name
 
     # Step 1: Upload the file to S3
     if upload_file_to_s3(file_path, S3_BUCKET_URL, file_name):
