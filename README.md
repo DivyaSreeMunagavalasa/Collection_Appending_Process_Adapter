@@ -8,7 +8,7 @@ This repository contains a Python script (`append_process_demo.py`) that demonst
 
 - **Upload:** Uploads GeoJSON files to AWS S3.
 - **Authentication:** Retrieves access tokens from an authentication server.
-- **Process Initiation:** Initiates append processes via specified endpoints.
+- **Process Initiation:** Initiates append process via specified endpoints.
 - **Monitoring:** Monitors job status until completion.
 - **Cleanup:** Provides optional functionality to delete uploaded files after successful processing.
   
