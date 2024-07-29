@@ -46,7 +46,7 @@ def get_access_token():
 
 def start_append_process(token, file_name):
     headers = {
-        'token': token,
+        'Authorization': f'Bearer {token}',
         'Content-Type': 'application/json'
     }
     payload = {
@@ -70,7 +70,7 @@ def start_append_process(token, file_name):
         return None
 
 def poll_job_status(job_api_url, token):
-    headers = {'token': token}
+    headers = {'Authorization': f'Bearer {token}'}
     while True:
         print("Polling job status...")
         response = requests.get(job_api_url, headers=headers)
@@ -104,7 +104,7 @@ def delete_file_from_s3(bucket_name, object_name):
 
 def main():
     file_path = "/home/divya/Downloads/data/point_10.json"  # Local path to your JSON file
-    file_name = "append_adapter_demo_file.json"  # Desired S3 object name
+    file_name = "append_adapter2.json"  # Desired S3 object name
 
     # Step 1: Upload the file to S3
     if upload_file_to_s3(file_path, S3_BUCKET_URL, file_name):
